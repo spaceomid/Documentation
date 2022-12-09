@@ -1,17 +1,18 @@
-# Welcome to MkDocs
+# Welcome to Omid Space Documentation
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Description and feature list of projects.
 
-## Commands
+## Projects
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+* `Image Processing Platform` - PLatform for manage Map tile and ...
+* `Drone` - Spraying farming land via drone and ...
+* `Farming` - Mange farming operation like ...
+* `Satellite Communicator` - Satellite based social network.
+* `Satellite Data Collector` - Farming data collector via satellite communication.
 
-## Project layout
+## Developers
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+* [Mr. TalebElm](/Developers/MrTalebElm/)
+* [Mr. Yaghini](/Developers/MrYaghini/)
+* [Mr. Zareie](/Developers/MrZareie/)
+* [Ms. Sabahi](/Developers/MsSabahi/)
