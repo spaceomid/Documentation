@@ -10,4 +10,5 @@
 ### Deploy to github
 > mkdocs gh-deploy
 
-> -
+doc2.md
+> > -
