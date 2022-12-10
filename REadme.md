@@ -1,3 +1,6 @@
+### Omid Space document url
+> https://spaceomid.github.io/Documentation/
+
 ### mkdocs guid:
  > https://squidfunk.github.io/mkdocs-material/creating-your-site/#previewing-as-you-write
  
@@ -9,6 +12,3 @@
 
 ### Deploy to github
 > mkdocs gh-deploy
-
-doc2.md
-> > -
