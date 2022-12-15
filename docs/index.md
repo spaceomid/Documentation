@@ -1,7 +1,6 @@
 # Welcome to Omid Space Documentation
 
 Description and feature list of projects.
-salaam
 
 ## Projects
 
@@ -15,5 +14,5 @@ salaam
 
 -   [Mr. TalebElm](/Developers/MrTalebElm/)
 -   [Mr. Yaghini](/Developers/MrYaghini/)
--   [Mr. Zareie](/Developers/MrZareie/)
+-   [Mr. Zarei](/Developers/MrZarei/)
 -   [Ms. Sabahi](/Developers/MsSabahi/)
