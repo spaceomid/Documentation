@@ -1,4 +1,4 @@
-# Welcome to Omid Space Documentation
+# Welcome to Space Omid Documentation
 
 Description and feature list of projects.
 
@@ -12,7 +12,7 @@ Description and feature list of projects.
 
 ## Developers
 
--   [Mr. TalebElm](/Developers/MrTalebElm/)
--   [Mr. Yaghini](/Developers/MrYaghini/)
--   [Mr. Zarei](/Developers/MrZarei/)
--   [Ms. Sabahi](/Developers/MsSabahi/)
+-   [Mr. TalebElm](/Documentation/Developers/MrTalebElm/)
+-   [Mr. Yaghini](/Documentation/Developers/MrYaghini/)
+-   [Mr. Zarei](/Documentation/Developers/MrZarei/)
+-   [Ms. Sabahi](/Documentation/Developers/MsSabahi/)
