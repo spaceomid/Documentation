@@ -48,6 +48,6 @@
 
     #### test cases:
 
-    - [ ] project description.
-    - [ ] project tree diagram.
-    - [ ] project feature list.
+    - [X] project description.
+    - [X] project tree diagram.
+    - [X] project feature list.

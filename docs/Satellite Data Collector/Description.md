@@ -1,10 +1,53 @@
 ### Description
 
-This project is mobile application for collect data from mobile app. and sed to satellite.
+This project is mobile application for collect data from mobile app. and send to satellite.
+you can use this application to monitor your logging data and change default settings in place or monitor logged data in any remote place using internet connection.
+
 
 ### Technologies
 
--   React
+-   Javascript, Typescript
+-   React, React Native
+-   Expo
+
+!!! HodHod_Project_Sructure info
+
+    ``` mermaid
+        stateDiagram-v2
+            state fork_state <<fork>>
+            HodHod --> fork_state
+            fork_state --> Client
+            fork_state --> Server
+            fork_state --> Satellite
+
+            Client --> App
+            Client --> Device
+
+            App --> Data_Collector
+            App --> Communicator
+
+            state Communicator_state <<fork>>
+            Communicator --> Communicator_state
+            Communicator_state --> Login,Register,Auth
+            Communicator_state --> Communication_over_wifi_to_device
+            Communicator_state --> Save,Edit,ShowStatus_messages
+            Communicator_state --> Create,Edit,Delete,Update_chats
+
+            state Data_Collector_state <<fork>>
+            Data_Collector --> Data_Collector_state
+            Data_Collector_state --> Login,Register,Auth
+            Data_Collector_state --> Communication_over_wifi_to_device
+            Data_Collector_state --> Data_Logger
+            Data_Collector_state --> Setting
+    ```
+
+### Feature List
+
+-   Authentication
+-   Communication over wifi
+-   Data Logging
+-   Change device default setting
+-   ...
 
 ### Team
 
