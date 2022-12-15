@@ -7,4 +7,4 @@ This project is mobile application for communication purpose.
 * React
 
 ### Team
-* Mr. Zareie
+* Mr. Zarei

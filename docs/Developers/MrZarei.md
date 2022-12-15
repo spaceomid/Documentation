@@ -1,39 +1,50 @@
-# Mr. Zareie Task list
+# Mr. Zarei Task list
 
 ### Dockerize React
-???+ Task 
+
+???+ Task
 
     > Write Dockerfile for simple react project.
 
-    | Estimate       | Start         | cost          | 
+    | Estimate       | Start         | cost          |
     |----------------|---------------|---------------|
-    | ? point        | 1401/00/00    | ? point       |
+    | 4h             | 1401/09/29    |               |
 
     #### test cases:
 
     - [ ] Run react app in docker desktop.
 
+    !!! error
+
+        Docker desktop not installed correctly yet.
+
 ### Docker-compose for React and NGINX
-??? Task 
+
+??? Task
 
     > Write Dockerfile for react project and NGINX, then use docker-compose for setup both of them.
 
-    | Estimate       | Start         | cost          | 
+    | Estimate       | Start         | cost          |
     |----------------|---------------|---------------|
-    | ? point        | 1401/00/00    | ? point       |
+    | 4h             | 1401/09/29    |               |
 
     #### test cases:
 
     - [ ] Run react app and NGINX in docker-compose.
 
+    !!! error
+
+        Docker desktop not installed correctly yet.
+
 ### Project documentation
-??? Task 
+
+??? Task
 
     > Document "Satellite communicator and Data collector" project.
 
-    | Estimate       | Start         | cost          | 
+    | Estimate       | Start         | cost          |
     |----------------|---------------|---------------|
-    | ? point        | 1401/00/00    | ? point       |
+    | 8h             | 1401/09/24    | ? point       |
 
     #### test cases:
 

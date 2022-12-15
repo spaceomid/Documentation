@@ -1,10 +1,11 @@
 ### Description
-This project is mobile application for collect data from mobile app. and sed to satellite.
 
+This project is mobile application for collect data from mobile app. and sed to satellite.
 
 ### Technologies
 
-* React
+-   React
 
 ### Team
-* Mr. Zareie
+
+-   Mr. Zarei
