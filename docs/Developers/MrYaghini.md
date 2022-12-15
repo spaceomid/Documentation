@@ -7,12 +7,12 @@
 
     | Estimate       | Start         | cost          | 
     |----------------|---------------|---------------|
-    | ? point        | 1401/00/00    | ? point       |
+    | 0              | 1401/00/00    | 0             |
 
     #### test cases:
 
-    - [ ] Setup docker desktop.
-    - [ ] Setup simple popular docker-compose project.
+    - [x] Setup docker desktop.
+    - [x] Setup simple popular docker-compose project.
 
 
 ### Project documentation
@@ -22,10 +22,10 @@
 
     | Estimate       | Start         | cost          | 
     |----------------|---------------|---------------|
-    | ? point        | 1401/00/00    | ? point       |
+    | 1401/09/30     | 1401/09/24    | ? point       |
 
     #### test cases:
 
-    - [ ] project description.
+    - [x] project description.
     - [ ] project tree diagram.
-    - [ ] project feature list.
+    - [X] project feature list.
