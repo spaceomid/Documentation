@@ -12,8 +12,8 @@
     #### test cases:
 
     - [x] Familiar with Cass and Iaas.
-    - [ ] Setup Dockerized django project on Caas.
-    - [ ] Setup django project from git.
+    - [x] Setup Dockerized django project on Caas.
+    - [x] Setup django project from git.
 
 ### Dockerize gitlab
 ??? Task
@@ -26,7 +26,7 @@
 
     #### test cases:
 
-    - [ ] Setup gitlab on arvan cloud.
+    - [x] Setup gitlab on arvan cloud.
 
 
 ### Dockerize Django
@@ -37,7 +37,7 @@
 
     | Estimate       | Start         | cost          | 
     |----------------|---------------|---------------|
-    | ? point        | 1401/00/00    | ? point       |
+    | 3 Day          | 1401/00/00    | ? point       |
 
     #### test cases:
 
@@ -51,7 +51,7 @@
 
     | Estimate       | Start         | cost          | 
     |----------------|---------------|---------------|
-    | ? point        | 1401/00/00    | ? point       |
+    | 2 Day          | 1401/00/00    | ? point       |
 
     #### test cases:
 
