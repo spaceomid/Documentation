@@ -10,6 +10,8 @@ sample data.
 -   `Farming` - Mange farming operation like ...
 -   `Satellite Communicator` - Satellite based social network.
 -   `Satellite Data Collector` - Farming data collector via satellite communication.
+-   `Mission Design` - Designing the mission of system satellites.
+-   `HODHOD GS` - HodHod satellite ground station.
 
 ## Developers
 
