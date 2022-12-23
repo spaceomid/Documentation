@@ -67,6 +67,33 @@
 
     #### test cases:
 
-    - [ ] show swagger pannel.
-    - [ ] show redoc pannel.
+    - [x] show swagger pannel.
+    - [x] show redoc pannel.
+    
+### Microservices
+??? Task
+
+    > Create map and tile manager microservices.
+    
+    | Estimate       | Start         | cost          | 
+    |----------------|---------------|---------------|
+    |      1w        | 1401/00/00    | ? point       |
+    
+    #### test cases:
+    
+    - [ ] map service.
+    - [ ] stile manager service.
+    
+### Handler
+??? Task
+
+    > Create handler for gee service.
+    
+    | Estimate       | Start         | cost          | 
+    |----------------|---------------|---------------|
+    |      1w        | 1401/00/00    | ? point       |
+    
+    #### test cases:
+    
+    - [ ] checking the connection between services.
 
