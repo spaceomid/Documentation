@@ -12,7 +12,7 @@
 
     #### test cases:
 
-    - [ ] Run react app in docker desktop.
+    - [X] Run react app in docker desktop.
 
     !!! error
 
@@ -30,7 +30,7 @@
 
     #### test cases:
 
-    - [ ] Run react app and NGINX in docker-compose.
+    - [X] Run react app and NGINX in docker-compose.
 
     !!! error
 
