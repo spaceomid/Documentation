@@ -7,7 +7,7 @@
 
     | Estimate       | Start         | cost          | 
     |----------------|---------------|---------------|
-    | ? point        | 1401/00/00    | ? point       |
+    |      8h        | 1401/00/00    |               |
 
     #### test cases:
 
@@ -21,7 +21,7 @@
 
     | Estimate       | Start         | cost          | 
     |----------------|---------------|---------------|
-    | ? point        | 1401/00/00    | ? point       |
+    |      2h        | 1401/00/00    |               |
 
     #### test cases:
 
@@ -36,7 +36,7 @@
 
     | Estimate       | Start         | cost          | 
     |----------------|---------------|---------------|
-    | ? point        | 1401/00/00    | ? point       |
+    |      1h        | 1401/00/00    |               |
 
     #### test cases:
 
@@ -49,7 +49,7 @@
 
     | Estimate       | Start         | cost          | 
     |----------------|---------------|---------------|
-    | ? point        | 1401/00/00    | ? point       |
+    |      1h        | 1401/00/00    |               |
 
     #### test cases:
 
@@ -63,10 +63,37 @@
 
     | Estimate       | Start         | cost          | 
     |----------------|---------------|---------------|
-    | ? point        | 1401/00/00    | ? point       |
+    |      1h        | 1401/00/00    |               |
 
     #### test cases:
 
-    - [ ] show swagger pannel.
-    - [ ] show redoc pannel.
+    - [x] show swagger pannel.
+    - [x] show redoc pannel.
+    
+### Microservices
+??? Task
+
+    > Create map and tile manager microservices.
+    
+    | Estimate       | Start         | cost          | 
+    |----------------|---------------|---------------|
+    |      1w        | 1401/00/00    |               |
+    
+    #### test cases:
+    
+    - [ ] map service.
+    - [ ] stile manager service.
+    
+### Handler
+??? Task
+
+    > Create handler for gee service.
+    
+    | Estimate       | Start         | cost          | 
+    |----------------|---------------|---------------|
+    |      1w        | 1401/00/00    |               |
+    
+    #### test cases:
+    
+    - [ ] checking the connection between services.
 

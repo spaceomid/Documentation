@@ -22,10 +22,10 @@
 
     | Estimate       | Start         | cost          | 
     |----------------|---------------|---------------|
-    | 1401/09/30     | 1401/09/24    | ? point       |
+    | 1401/09/30     | 1401/09/24    | 1h            |
 
     #### test cases:
 
     - [x] project description.
-    - [ ] project tree diagram.
+    - [x] project tree diagram.
     - [X] project feature list.
