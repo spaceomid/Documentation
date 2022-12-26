@@ -29,3 +29,31 @@
     - [x] project description.
     - [x] project tree diagram.
     - [X] project feature list.
+
+
+### Landing Page
+??? Task 
+
+    > Document 'Drone' project.
+
+    | Estimate       | Start         | cost          | 
+    |----------------|---------------|---------------|
+    | 1401/10/08     | 1401/09/30    | ?h            |
+
+    #### test cases:
+
+    - [ ] Dockerize
+
+
+### Restful API
+??? Task 
+
+    > Document 'Drone' project.
+
+    | Estimate       | Start         | cost          | 
+    |----------------|---------------|---------------|
+    | 1401/10/08     | 1401/09/30    | ?h            |
+
+    #### test cases:
+
+    - [ ] Starting
