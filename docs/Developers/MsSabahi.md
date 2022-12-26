@@ -81,7 +81,7 @@
     
     #### test cases:
     
-    - [ ] map service.
+    - [x] map service.
     - [ ] stile manager service.
     
 ### Handler
