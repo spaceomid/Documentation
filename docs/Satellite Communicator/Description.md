@@ -19,8 +19,11 @@ Messenger app that you can use it when you can't connect to the internet network
             fork_state --> Server
             fork_state --> Satellite
 
-            Client --> App
-            Client --> Device
+            state Client_state <<fork>>
+            Client --> Client_state
+            Client_state --> App
+            Client_state --> Device
+
 
             App --> Data_Collector
             App --> Communicator
@@ -38,6 +41,16 @@ Messenger app that you can use it when you can't connect to the internet network
             Data_Collector_state --> Communication_over_wifi_to_device
             Data_Collector_state --> Data_Logger
             Data_Collector_state --> Setting
+
+            Device --> Communicator_Collector
+            state Communicator_Collector_state <<fork>>
+            Communicator_Collector --> Communicator_Collector_state
+            Communicator_Collector_state --> Connection_to_Sensors
+            Communicator_Collector_state --> Wifi_Setting
+            Communicator_Collector_state --> GPS
+            Communicator_Collector_state --> SD_Card
+            Communicator_Collector_state --> Direct_Communication_to_Satellite
+
     ```
 
 ### Feature List
