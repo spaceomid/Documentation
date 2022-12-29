@@ -55,11 +55,17 @@ Messenger app that you can use it when you can't connect to the internet network
 
 ### Feature List
 
--   Authentication
--   Communication over wifi
--   Messenger features
--   Change device default setting
--   ...
+1.  Authentication
+    -   User Managment system for Login, Register,... or any synchronization between services
+
+2.  Communication over wifi
+    -   using wifi protocol and http as communication between device and phone
+
+3.  Messenger features
+    -   Common messenger features like send simple text or emojis, change personal informations and ...
+
+4.  Change device default setting
+5.  ...
 
 ### Team
 

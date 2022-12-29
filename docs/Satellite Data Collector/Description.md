@@ -3,7 +3,6 @@
 This project is mobile application for collect data from mobile app. and send to satellite.
 you can use this application to monitor your logging data and change default settings in place or monitor logged data in any remote place using internet connection.
 
-
 ### Technologies
 
 -   Javascript, Typescript
@@ -20,8 +19,11 @@ you can use this application to monitor your logging data and change default set
             fork_state --> Server
             fork_state --> Satellite
 
-            Client --> App
-            Client --> Device
+            state Client_state <<fork>>
+            Client --> Client_state
+            Client_state --> App
+            Client_state --> Device
+
 
             App --> Data_Collector
             App --> Communicator
@@ -39,15 +41,28 @@ you can use this application to monitor your logging data and change default set
             Data_Collector_state --> Communication_over_wifi_to_device
             Data_Collector_state --> Data_Logger
             Data_Collector_state --> Setting
+
+            Device --> Communicator_Collector
+            state Communicator_Collector_state <<fork>>
+            Communicator_Collector --> Communicator_Collector_state
+            Communicator_Collector_state --> Connection_to_Sensors
+            Communicator_Collector_state --> Wifi_Setting
+            Communicator_Collector_state --> GPS
+            Communicator_Collector_state --> SD_Card
+            Communicator_Collector_state --> Direct_Communication_to_Satellite
+
     ```
 
 ### Feature List
 
--   Authentication
--   Communication over wifi
--   Data Logging
--   Change device default setting
--   ...
+1.  Authentication
+    -   User Managment system for Login, Register,... or any synchronization between services
+2.  Communication over wifi
+    -   using wifi protocol and http as communication between device and phone
+3.  Data Logging
+    - log data to satellite and user phone in place
+4.  Change device default setting
+5.  ...
 
 ### Team
 
