@@ -7,12 +7,12 @@
 
     | Estimate       | Start         | cost          | 
     |----------------|---------------|---------------|
-    | ? point        | 1401/00/00    | ? point       |
+    | 0              | 1401/00/00    | 0             |
 
     #### test cases:
 
-    - [ ] Setup docker desktop.
-    - [ ] Setup simple popular docker-compose project.
+    - [x] Setup docker desktop.
+    - [x] Setup simple popular docker-compose project.
 
 
 ### Project documentation
@@ -22,10 +22,38 @@
 
     | Estimate       | Start         | cost          | 
     |----------------|---------------|---------------|
-    | ? point        | 1401/00/00    | ? point       |
+    | 1401/09/30     | 1401/09/24    | 1h            |
 
     #### test cases:
 
-    - [ ] project description.
-    - [ ] project tree diagram.
-    - [ ] project feature list.
+    - [x] project description.
+    - [x] project tree diagram.
+    - [X] project feature list.
+
+
+### Landing Page
+??? Task 
+
+    > Document 'Drone' project.
+
+    | Estimate       | Start         | cost          | 
+    |----------------|---------------|---------------|
+    | 1401/10/15     | 1401/09/30    | ?h            |
+
+    #### test cases:
+
+    - [ ] Dockerize
+
+
+### Restful API
+??? Task 
+
+    > Document 'Drone' project.
+
+    | Estimate       | Start         | cost          | 
+    |----------------|---------------|---------------|
+    | 1401/10/08     | 1401/09/30    | 3h            |
+
+    #### test cases:
+
+    - [X] Starting
