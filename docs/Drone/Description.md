@@ -48,7 +48,7 @@ flowchart TB
 ### Database
 * :simple-elastic:{.grey} ElasticSearch
 
-### Diagram
+### User flow
 ``` mermaid
 stateDiagram-v2
   state fork_state <<fork>>
