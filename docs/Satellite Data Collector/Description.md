@@ -12,6 +12,48 @@ you can use this application to monitor your logging data and change default set
 !!! HodHod_Project_Sructure info
 
     ``` mermaid
+        flowchart TB
+            subgraph Internet
+                subgraph Web
+                    DataGatheringDashboard[Data Gathering Dashboard]
+                end
+                subgraph Mobile
+                    MessengerApp
+                end
+            end
+
+            subgraph Firewall
+                Gateway
+            end
+
+            subgraph WIFI
+                subgraph Hardware
+                    subgraph Modem
+                        DataGatheringHW
+                        MessengerHW
+                    end
+                end
+            end
+
+            Internet --REST--> Gateway
+            Internet --REST--> WIFI
+
+            Gateway --REST--> HodhodServer[Hodhod Server]
+            HodhodServer --REST--> ELKHodhod[(ELK Hodhod)]
+    ```
+
+### Sub Project
+
+* DataGathering Dashboard (Frontend). Implement via `React(Nextjs)` :simple-react:{.grey} 
+* Modem (Hardware). Implement via `STM32F103CT8(Arduino)`:simple-arduino:{.grey} 
+* Hodhod Server (Backend). Implement via `DotNetCore`:material-dot-net:{.grey} 
+
+### Database
+* :simple-elastic:{.grey} ElasticSearch
+
+!!! UserFlow info
+
+    ``` mermaid
         stateDiagram-v2
             state fork_state <<fork>>
             HodHod --> fork_state

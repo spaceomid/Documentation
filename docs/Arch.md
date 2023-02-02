@@ -15,29 +15,48 @@ flowchart TB
     
     subgraph Web
     Map
+    DataGatheringDashboard[Data Gathering Dashboard]
     end
     
     subgraph Mobile
     Drone
+    MessengerApp
     end
     
     end
-    
-        
+
     subgraph Firewall
     Gateway
     end
     
+    subgraph WIFI
+    subgraph Hardware
+    subgraph Modem
+    DataGatheringHW
+    MessengerHW
+    end
+    end
+    end
+
+
     Internet --REST--> Gateway
+
+    Internet --REST--> WIFI
+
     Gateway --REST--> Financial
     Gateway --REST--> DroneBackend[Drone Backend]
-    Gateway --REST--> MapDataHandler[Map Data Handler]     
+    Gateway --REST--> MapDataHandler[Map Data Handler] 
+
+    Gateway --REST--> HodhodServer[Hodhod Server]
+    Gateway --REST--> MessageSender[Message Sender]   
         
     MapDataHandler --> ELKHandler[(ELK Handler)]:::Elk
     MapDataHandler --RabbitMQ--> OSE[Omid Space Engine ]
     MapDataHandler --RabbitMQ--> GEE[Google Earth Engine ]
     MapDataHandler --RabbitMQ--> TPE[Third Party Engine ]
-    
+
+    HodhodServer --REST--> ELKHodhod[(ELK Hodhod)]
+    MessageSender --REST--> ELKSmsEmail[(ELK Sms Email)]
     
     DroneBackend --REST--> ELKDrone[(ELK Drone)]:::Elk
      

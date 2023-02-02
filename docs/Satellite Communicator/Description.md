@@ -12,6 +12,48 @@ Messenger app that you can use it when you can't connect to the internet network
 !!! HodHod_Project_Sructure info
 
     ``` mermaid
+        flowchart TB
+            subgraph Internet
+                subgraph Web
+                    DataGatheringDashboard[Data Gathering Dashboard]
+                end
+                subgraph Mobile
+                    MessengerApp
+                end
+            end
+
+            subgraph Firewall
+                Gateway
+            end
+
+            subgraph WIFI
+                subgraph Hardware
+                    subgraph Modem
+                        DataGatheringHW
+                        MessengerHW
+                    end
+                end
+            end
+
+            Internet --REST--> Gateway
+            Internet --REST--> WIFI
+
+            Gateway --REST--> HodhodServer[Hodhod Server]
+            HodhodServer --REST--> ELKHodhod[(ELK Hodhod)]
+    ```
+
+### Sub Project
+
+* MessengerApp (Frontend). Implement via `ReactNative(Expo)` :simple-expo:{.grey} 
+* Modem (Hardware). Implement via `STM32F103CT8(Arduino)`:simple-arduino:{.grey} 
+* Hodhod Server (Backend). Implement via `DotNetCore`:material-dot-net:{.grey} 
+
+### Database
+* :simple-elastic:{.grey} ElasticSearch
+
+!!! UserFlow info
+
+    ``` mermaid
         stateDiagram-v2
             state fork_state <<fork>>
             HodHod --> fork_state
@@ -56,12 +98,15 @@ Messenger app that you can use it when you can't connect to the internet network
 ### Feature List
 
 1.  Authentication
+
     -   User Managment system for Login, Register,... or any synchronization between services
 
 2.  Communication over wifi
+
     -   using wifi protocol and http as communication between device and phone
 
 3.  Messenger features
+
     -   Common messenger features like send simple text or emojis, change personal informations and ...
 
 4.  Change device default setting
