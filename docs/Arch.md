@@ -29,7 +29,7 @@ flowchart TB
     Gateway
     end
     
-    subgraph WIFI
+    subgraph WIFI_ReceiverTransceiver[WIFI and Receiver Transceiver]
     subgraph Hardware
     subgraph Modem
     DataGatheringHW
@@ -38,10 +38,16 @@ flowchart TB
     end
     end
 
+    subgraph Satellite
+        SatelliteHardware[Satellite Hardware]
+    end
+
+    WIFI_ReceiverTransceiver --RADIO--> Satellite
+    Satellite --RADIO--> HodhodServer
 
     Internet --REST--> Gateway
 
-    Internet --REST--> WIFI
+    Internet --REST--> WIFI_ReceiverTransceiver
 
     Gateway --REST--> Financial
     Gateway --REST--> DroneBackend[Drone Backend]
