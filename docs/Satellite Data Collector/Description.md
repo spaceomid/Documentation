@@ -26,7 +26,7 @@ you can use this application to monitor your logging data and change default set
                 Gateway
             end
 
-            subgraph WIFI
+            subgraph WIFI_ReceiverTransceiver
                 subgraph Hardware
                     subgraph Modem
                         DataGatheringHW
@@ -35,8 +35,16 @@ you can use this application to monitor your logging data and change default set
                 end
             end
 
+            subgraph Satellite
+                SatelliteHardware[Satellite Hardware]
+            end
+
+            WIFI_ReceiverTransceiver --RADIO--> Satellite
+            Satellite --RADIO--> HodhodServer
+
+            Internet --REST--> WIFI_ReceiverTransceiver
+
             Internet --REST--> Gateway
-            Internet --REST--> WIFI
 
             Gateway --REST--> HodhodServer[Hodhod Server]
             HodhodServer --REST--> ELKHodhod[(ELK Hodhod)]

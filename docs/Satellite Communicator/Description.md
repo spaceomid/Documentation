@@ -26,7 +26,7 @@ Messenger app that you can use it when you can't connect to the internet network
                 Gateway
             end
 
-            subgraph WIFI
+            subgraph WIFI_ReceiverTransceiver
                 subgraph Hardware
                     subgraph Modem
                         DataGatheringHW
@@ -35,8 +35,16 @@ Messenger app that you can use it when you can't connect to the internet network
                 end
             end
 
+            subgraph Satellite
+                SatelliteHardware[Satellite Hardware]
+            end
+
+            WIFI_ReceiverTransceiver --RADIO--> Satellite
+            Satellite --RADIO--> HodhodServer
+
+            Internet --REST--> WIFI_ReceiverTransceiver
+
             Internet --REST--> Gateway
-            Internet --REST--> WIFI
 
             Gateway --REST--> HodhodServer[Hodhod Server]
             HodhodServer --REST--> ELKHodhod[(ELK Hodhod)]

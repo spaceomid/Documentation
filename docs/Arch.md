@@ -45,9 +45,9 @@ flowchart TB
     WIFI_ReceiverTransceiver --RADIO--> Satellite
     Satellite --RADIO--> HodhodServer
 
-    Internet --REST--> Gateway
-
     Internet --REST--> WIFI_ReceiverTransceiver
+
+    Internet --REST--> Gateway
 
     Gateway --REST--> Financial
     Gateway --REST--> DroneBackend[Drone Backend]
@@ -55,7 +55,7 @@ flowchart TB
 
     Gateway --REST--> HodhodServer[Hodhod Server]
     Gateway --REST--> MessageSender[Message Sender]   
-        
+
     MapDataHandler --> ELKHandler[(ELK Handler)]:::Elk
     MapDataHandler --RabbitMQ--> OSE[Omid Space Engine ]
     MapDataHandler --RabbitMQ--> GEE[Google Earth Engine ]
