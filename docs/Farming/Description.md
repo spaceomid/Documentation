@@ -7,6 +7,10 @@ This project is Web application which assist farmer in farming operations.
 ``` mermaid
 flowchart TB
     
+    subgraph Handler
+        Caching
+    end
+
     Map --Rest--> Gateway
     Gateway --Rest--> Handler
     Handler --Rabbit MQ--> A[GEE Service]
