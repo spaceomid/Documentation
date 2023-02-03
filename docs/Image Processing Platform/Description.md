@@ -1,13 +1,27 @@
 ### Description
 This project is Web application which manage map tile and drawing operations for farming purpose.
 
+### Diagram
+
+
+``` mermaid
+flowchart TB
+    
+    Map --Rest--> Gateway
+    Gateway --> Handler
+    Handler --Rabbit MQ--> A[GEE Service]
+
+    
+``` 
 
 ### Technologies
 
-* Django
-* React
+* :simple-django:{.grey} Django
+* :simple-react:{.grey} React
 
-### Diagram
+
+
+### User flow
 
 ```mermaid
     stateDiagram-v2
