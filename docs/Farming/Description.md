@@ -38,8 +38,8 @@ flowchart TB
 
 ### Technologies
 
-* Django
-* React
+* -> Django
+* -> React
 
 ### Team
 * Ms. Moradi
