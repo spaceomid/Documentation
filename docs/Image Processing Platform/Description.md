@@ -7,9 +7,11 @@ This project is Web application which manage map tile and drawing operations for
 ``` mermaid
 flowchart TB
     
-    Map --Rest--> Gateway
-    Gateway --> Handler
+    Login --Rest--> Gateway
+    C[Map-Token] --Rest--> Gateway
+    Gateway --Rest--> Handler
     Handler --Rabbit MQ--> A[GEE Service]
+    Handler --Rabbit MQ--> B[SOE Service]
 
     
 ``` 
@@ -29,12 +31,13 @@ flowchart TB
     HomePage(Admin) --> Auth,Login
     Auth,Login --> AdminDashboard
     AdminDashboard --> UsersSearchHistory
+    AdminDashboard --> ImageManagement
 
     HomePage(User) --> Register,Auth,Login
     Register,Auth,Login --> UserDashboard
     UserDashboard --> OwnUserSearchHistory
     UserDashboard --> DrawPolygon
-
+    DrawPolygon --> ReceiveServicesAndRelatedImages
 
 ```
 
