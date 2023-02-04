@@ -26,18 +26,18 @@ flowchart TB
 ### User flow
 
 ```mermaid
-    stateDiagram-v2
+    flowchart TB
 
-    HomePage(Admin) --> Auth,Login
+    E[HomePage-Admin] --> Auth,Login
     Auth,Login --> AdminDashboard
-    AdminDashboard --> UsersSearchHistory
+    AdminDashboard --> H[Users Search History]
     AdminDashboard --> ImageManagement
 
-    HomePage(User) --> Register,Auth,Login
+    F[HomePage-User] --> Register,Auth,Login
     Register,Auth,Login --> UserDashboard
-    UserDashboard --> OwnUserSearchHistory
-    UserDashboard --> DrawPolygon
-    DrawPolygon --> ReceiveServicesAndRelatedImages
+    UserDashboard --> G[Own User Search History]
+    UserDashboard --> I[Draw Polygon]
+    I --> D[Receive Services and Related Images]
 
 ```
 
