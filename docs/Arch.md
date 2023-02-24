@@ -85,3 +85,5 @@ flowchart TB
 ``` 
 
 [Gateway](https://gateway.spaceomid.ir)
+[ِDrone](https://drone.spaceomid.ir/swagger)
+[message-sender](https://message-sender.spaceomid.ir/swagger)
