@@ -8,7 +8,7 @@ This project is Web application which assist farmer in farming operations.
 flowchart TB
     
     subgraph Handler
-        CachingTiles
+        Caching Tiles
     end
 
     Map --Rest--> Gateway
