@@ -33,7 +33,7 @@ flowchart TB
 
 ### Technologies
 
-* :simple-maui:{.grey} MAUI
+* :simple-xamarin:{.grey} MAUI
 * :simple-flask:{.grey} Direct WiFi
 * :simple-flask:{.grey} Flask
 * :simple-react:{.grey} React
