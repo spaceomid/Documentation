@@ -24,16 +24,16 @@ flowchart TB
     Gateway
     end
     
-    Internet --> Gateway
-    Gateway --> Financial
-    Gateway --> DroneBackend[Drone Backend]
+    Internet --Rest--> Gateway
+    Gateway --Rest--> Financial
+    Gateway --Rest--> DroneBackend[Drone Backend]
     
 ``` 
 
 
 ### Technologies
 
-* :simple-xamarin:{.grey} Xamarin
+* :simple-xamarin:{.grey} MAUI
 * :simple-flask:{.grey} Direct WiFi
 * :simple-flask:{.grey} Flask
 * :simple-react:{.grey} React
@@ -42,7 +42,7 @@ flowchart TB
 
 ### Sub Project
 
-* Drone (Mobile-Frontend). Implement via `Xamarin`
+* Drone (Mobile-Frontend). Implement via `MAUI`
 * Drone server (Backend). Implement via `.net core`
 
 ### Database
