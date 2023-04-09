@@ -2,11 +2,9 @@
 
 ``` mermaid
 graph LR
-  A[Start] --> B{Error?};
-  B -->|Yes| C[Hmm...];
-  C --> D[Debug];
-  D --> B;
-  B ---->|No| E[Yay!];
+  A[RabbitMQ] -->|Push data| B{Publisher(Flask)};
+  B -->|publish data on channel| C[Socket Server];
+  C -->|Listen on channel| D[Client(Web, Mobile)];
 ```
 
 
