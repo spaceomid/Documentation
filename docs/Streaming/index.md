@@ -4,7 +4,7 @@
 graph LR
   A[RabbitMQ] --> B{Publisher(Flask)};
   B --> C[Socket Server];
-  C[Socket Server] --> C[Client(Web, Mobile)];
+  C --> D[Client(Web, Mobile)];
 ```
 
 
