@@ -5,16 +5,20 @@ This project is Web application which assist farmer in farming operations.
 
 
 ``` mermaid
-flowchart TB
+    flowchart TB
     
     subgraph Handler
-        Caching Tiles
+        CachingTiles
     end
 
+    Map --subscribe/channel--> SocketServer
     Map --Rest--> Gateway
     Gateway --Rest--> Handler
     Handler --Rabbit MQ--> A[GEE Service]
-
+    Handler --Rabbit MQ--> Publisher
+    Publisher --subscribe--> SocketServer    
+    Publisher --publish--> SocketServer
+    A[GEE Service] --Rabbit MQ--> Handler
     
 ``` 
 

@@ -1,4 +1,12 @@
-# Socket cluster server and client documentation
+# Socket cluster server and client documentation  
+
+``` mermaid
+graph LR
+  A[RabbitMQ] -->|Push data| B{Publisher(Flask)};
+  B -->|publish data on channel| C[Socket Server];
+  C -->|Listen on channel| D[Client(Web, Mobile)];
+```
+
 
 This documentation provides information about socket cluster server and clients(both publisher and subscriber).  
 there is also a README.md file available to this project for quick reference.  
