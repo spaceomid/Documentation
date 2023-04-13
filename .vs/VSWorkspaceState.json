@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\docs",
-    "\\docs\\Developers"
+    "\\docs\\Drone",
+    "\\docs\\Image Processing Platform"
   ],
-  "SelectedNode": "\\docs\\Developers\\MrYaghini.md",
+  "SelectedNode": "\\docs\\Image Processing Platform\\Description.md",
   "PreviewInSolutionExplorer": false
 }
