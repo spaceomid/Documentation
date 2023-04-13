@@ -10,6 +10,7 @@ flowchart TB
     
     style Gateway fill:#00c85333
     style Streaming fill:#448aff,stroke-width:4px,color:#fff
+    style Streaming_ fill:#448aff,stroke-width:4px,color:#fff
     
     subgraph Internet
     
@@ -60,6 +61,9 @@ flowchart TB
     MapDataHandler --RabbitMQ--> OSE[Omid Space Engine ]
     MapDataHandler --RabbitMQ--> GEE[Google Earth Engine ]
     MapDataHandler --RabbitMQ--> TPE[Third Party Engine ]
+    MapDataHandler --RabbitMQ--> Publisher[Publisher]
+    Publisher --ws--> Streaming_
+    Streaming --ws--> Internet
 
     HodhodServer --REST--> ELKHodhod[(ELK Hodhod)]
     MessageSender --REST--> ELKSmsEmail[(ELK Sms Email)]
@@ -81,6 +85,7 @@ flowchart TB
     subgraph O.S.E.
     OSE
     end
+    
     
 ``` 
 
