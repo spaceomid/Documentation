@@ -34,7 +34,7 @@ flowchart TB
 ### Technologies
 
 * :simple-xamarin:{.grey} MAUI
-* :simple-wifi:{.grey} Direct WiFi
+* :material-wifi-sync:{.grey} Direct WiFi
 * :material-dot-net:{.grey} .net core
 
 ### Database
