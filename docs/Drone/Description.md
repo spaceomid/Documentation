@@ -86,8 +86,10 @@ stateDiagram-v2
   MainPage --> fork_state
   fork_state --> Mission
   fork_state --> Operation
+  fork_state --> Templates
 
   Mission --> Process
+  Mission --> SaveTemplate
   Mission --> AddPoint
   Mission --> DeletePoint
   Mission --> Setting
@@ -95,12 +97,7 @@ stateDiagram-v2
   Operation --> DroneStatus
   Operation --> Start
   Operation --> Stop
-
-  state join_state <<join>>
-  Mission --> join_state
-  Operation --> join_state
-  join_state --> Templates
-  Templates --> Save
+  Templates --> Edit
   Templates --> Open
   Templates --> Delete
 ```
