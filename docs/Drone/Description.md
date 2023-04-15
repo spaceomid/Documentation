@@ -69,7 +69,15 @@ If the drone exits the auto mode during operation, the rest of the mission is `s
 
 ### Drone Backend
 
+This microservice includes four methods.
 
+`GetAllTemplates`: In this method, all the mission templates can be received based on specifying the page.
+
+`GetTemplates`: In this method, you can receive the mission templates of each device based on the imei code in general or for a specific name by specifying the page.
+
+`TemplatesStorage`: In this method, the specifications of the mission templates sent by the mobile app are saved for each device.
+
+`TemplatesLogicalDelete`: In this method, the mission templates are logically deleted based on the name and imai code, either directly or because a new version of them has come for storage.
 
 ### User flow
 ``` mermaid
