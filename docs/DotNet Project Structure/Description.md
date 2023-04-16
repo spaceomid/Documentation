@@ -137,5 +137,3 @@ As you can see, each layer only knows about the layer directly below it and comm
 ## Conclusion
 
 By following the Clean Architecture pattern, we can create applications that are modular, testable, and maintainable over time. In this document, we explored the four main layers of a .NET 7 project using Clean Architecture and how they interact with each other. We also provided a diagram to help you visualize the structure of your own projects.
-
-I hope this helps guide you as you develop your own .NET 7 projects using Clean Architecture!
