@@ -2,9 +2,9 @@
 
 ``` mermaid
   graph LR
-  A[RabbitMQ] -->|PushdData| B{Publisher};
-  B -->|publish-data-on-channel| C[Socket-Server];
-  C -->|Listen-on-channel| D[Client(Web,Mobile)];
+  A[RabbitMQ] --> B{Publisher};
+  B --> C[Socket-Server];
+  C --> D[Client(Web,Mobile)];
 ```
 
 
