@@ -1,7 +1,7 @@
 ---
 subtitle: This part will describe Socket Cluster Client subscriber
 ---
-# socket cluster Publisher(Flask)
+# socket cluster Client
 For this service we are using Nodejs for handling requests and [socketcluster-client](https://socketcluster.io/docs/api-socket-cluster-client/) for creating socket object to connect to socket server and listen on a channel(Wont have privilage to publish data on channel)  
 **THIS IS FOR TEST ONLY AND SHOULD BE USED AS SAMPLE CODE TO IMPLEMENT CLIENTS!**
 in order to access it and view the code or run it change your Directory to `./socketsub`  
