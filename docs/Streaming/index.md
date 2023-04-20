@@ -1,7 +1,7 @@
 # Socket cluster server and client documentation  
 
 ``` mermaid
-graph LR
+  graph LR
   A[RabbitMQ] -->|PushdData| B{Publisher};
   B -->|publish-data-on-channel| C[Socket-Server];
   C -->|Listen-on-channel| D[Client(Web,Mobile)];
