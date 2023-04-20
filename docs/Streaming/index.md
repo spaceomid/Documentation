@@ -2,9 +2,9 @@
 
 ``` mermaid
   graph LR
-  A[RabbitMQ] --> B{Publisher};
-  B --> C[Socket-Server];
-  C --> D[Client(Web,Mobile)];
+  A[RabbitMQ] --> Publisher
+  B --> Socket-Server
+  C --> Client(Web,Mobile)
 ```
 
 
