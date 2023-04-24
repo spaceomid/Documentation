@@ -71,9 +71,9 @@ Run the below command which will pull in all the applicable docker images and se
 **Access the Grafana dashboard from the browser**  
 Now its time to connect to the server that is runnig Grafana service from browser(Find the IP Address):  
 `SERVER-ADDRESS:3000/login`  
-???+ Default User And Pass
+???+ Default-User-And-Pass
 
-    Username: admin
+    Username: admin  
     Password: admin
 
 Navigate to the URL: `SERVER-ADDRESS:3000/datasources`  
