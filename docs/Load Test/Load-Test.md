@@ -29,7 +29,7 @@ To the test and send the result to database for dashboard
 `k6 run --out influxdb=Grafana-server-address Load-Test.js`(Change the Load-Test.js to name of the loadtest file you want!)  
 ## **Running InfluxDb and Grafana dashboar services**  
 **For running InfluxDb and Grafana dashboard**  
-{==IF THE DASHBOARD IS RUNNING JUST NAVIGATE TO YOUR GRAFANA HOME PAGE AND GO TO THE DASHBOARD SECTION!==}  
+==IF THE DASHBOARD IS RUNNING JUST NAVIGATE TO YOUR GRAFANA HOME PAGE AND GO TO THE DASHBOARD SECTION!==  
 IF YOU WANT TO SETUP THE DASHBOARD FOLLOW THE INSTRUCTION.  
 You can access the latest configs from `git clone https://github.com/grafana/k6 && cd k6`. It Contains all the files and examples, However the file you need is the docker compose that is described Here:  
 
