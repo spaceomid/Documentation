@@ -92,9 +92,9 @@ Post running this k6 run command, You set of results will be pushed to the influ
 ???+ 5-1-2023
 
     GateWay:  
-      Signup:
-        390 Concurrent User
-      SignIn(In 90 Seconds Duration):
+      Signup:  
+        390 Concurrent User  
+      SignIn(In 90 Seconds Duration):  
         100  
       Resources:  
         PostgreSQL:  
@@ -109,7 +109,7 @@ Post running this k6 run command, You set of results will be pushed to the influ
     Resources:  
       Financial:  
         CPU: 1Core  
-        RAM: 1GB
+        RAM: 1GB  
 
       
     WebSocket:  
