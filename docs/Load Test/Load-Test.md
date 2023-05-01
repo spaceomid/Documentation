@@ -84,5 +84,25 @@ Post running this k6 run command, You set of results will be pushed to the influ
 2. Under New, select the import option
 3. In the Import page, we will use ID: 2587 which is a pre-configured dashboard available for k6 load tests in Grafana. For more information, you can refer to this [Link](https://grafana.com/grafana/dashboards/2587-k6-load-testing-results/)
 4. In next page, we can add 2587 in the textbox and click Load button.
-5. Finally, select the source as “myinfluxdb (Default)” option and click on the Import button which will load up our dashboard.
+5. Finally, select the source as “myinfluxdb (Default)” option and click on the Import button which will load up our dashboard.  
 
+
+**Results**  
+
+???+ 5-1-2023
+
+    GateWay:  
+      Signup:
+        390 Concurrent User
+      SignIn(In 90 Seconds Duration):
+        100  
+      Resources:  
+        PostgreSQL:  
+          CPU: 1Core
+          RAM: 2GB  
+        GateWay:  
+          CPU: 1Core
+          RAM: 1GB
+        
+ 
+    Password: admin
