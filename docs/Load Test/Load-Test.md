@@ -102,7 +102,19 @@ Post running this k6 run command, You set of results will be pushed to the influ
           RAM: 2GB  
         GateWay:  
           CPU: 1Core
-          RAM: 1GB
-        
- 
-    Password: admin
+          RAM: 1GB  
+      
+    Drone:  
+    80 is OK  
+    Resources:
+      Financial:
+        CPU: 1Core  
+        RAM: 1GB
+
+      
+    WebSocket:
+      Both socket server and Socket publisher had 1GB of Ram and 1Core CPU
+      Because of async nature of node.js and FastAPI didn’t break even at 1 million requests!
+      Publish rate (with API call and not rabbit) was between 100-150.
+      Publish rate With RabbitMQ More than 2000.
+
