@@ -50,6 +50,14 @@ __Introduction
 The handler service is actually a service that receives a request based on satellite images and then, according to the engines it has, processes the request and provides the result to the requester. (The client handler can be a user or another service. If the client is a normal user, he receives the response to his request on the front side. And if it is another service, he can receive the response to his request from the brokers)__
 
 
+## Sub Project
+
+* Map (Frontend). Implement via `react js`
+* Farming (Backend). Implement via `django`
+* Handler (Backend). Implement via `django`
+* GEE (Backend). Implement via `python`
+* SOE (Backend). Implement via `django`
+
 ## workflow
 1- `Agricultural service`
 
