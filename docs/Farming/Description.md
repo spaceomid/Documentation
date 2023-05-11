@@ -56,7 +56,7 @@ The handler service is actually a service that receives a request based on satel
 * Farming (Backend). Implement via `django`
 * Handler (Backend). Implement via `django`
 * GEE (Backend). Implement via `python`
-* SOE (Backend). Implement via `django`
+<!-- * SOE (Backend). Implement via `django` -->
 
 ## workflow
 1- `Agricultural service`
