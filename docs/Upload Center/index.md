@@ -16,6 +16,15 @@ You can use `npm server.js` or `node server.js` commands(make sure you are in th
 ## **General WorkFLow of the Project**  
 * There are three api references for uploading files, getting the list of uploaded files and downloading the file(Check API reference part).  
 
+# **Project Structure and WorkFlow**  
+Different folders in the project will be described here by the order that they receive and proccess the File:  
+* **middleware**  
+this part contains `upload.js` file that is responsible for configuring multer and saving the file in the fileserver  
+* **controller**  
+this part contains `file_upload_controller.js` file that is responsible for handling errors and functions that are responsible for serving the routes  
+* **routes**  
+this part contains `routes.js` file that is responsible for routes and mthods(POST, Get) and calls`file_upload_controller.js` methods on the URL  
+
 
 ## **General API Reference**  
 **Last Update: 5/21/2023**  
