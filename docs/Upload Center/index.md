@@ -23,5 +23,5 @@ Upload a file:
 [POST] `/upload`  
 Get list of stored files with respective links:  
 [GET] `/files`  
-Download a file: 
+Download a file:  
 [GET] `/files/:name`  
