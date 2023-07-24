@@ -1,7 +1,7 @@
 ---
 subtitle: This part will describe Socket Cluster Client publisher
 ---
-# socket cluster Publisher(Flask)
+# socket cluster Publisher
 For this service we are using Flask for handling requests and [socketcluster-client-python](https://github.com/sacOO7/socketcluster-client-python) for creating socket object to connect to socket server and publish data and creating channels(sending requests for creating channels both for clients and Rabbit service).  
 in order to access it and view the code or run it change your Directory to `./socketpub`  
 
